@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout android:layout_weight="0.90"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"></LinearLayout>
+
+        <LinearLayout android:layout_weight="0.08"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_marginBottom="@dimen/margin_10">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <LinearLayout android:layout_weight="0.70"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/margin_5">
+
+                    <ImageView android:id="@+id/image_product"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.6"
+                        android:src="@drawable/fb"
+                        />
+
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout android:layout_weight="0.30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_5"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:orientation="vertical">
+
+                    <TextView android:id="@+id/txt_product_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/txt_size_13"
+                        android:textColor="@color/black"
+                        android:letterSpacing="0.05"
+                        android:text="@string/ProductName"
+                        android:textStyle="bold"
+                        android:layout_marginTop="@dimen/margin_10"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/margin_5">
+
+                        <LinearLayout android:layout_weight="0.7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/img_dot"></ImageView>
+
+                        </LinearLayout>
+
+                        <LinearLayout android:layout_weight="0.3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView android:id="@+id/txt_mrp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/txt_size_11"
+                                android:textColor="@color/gray"
+                                android:letterSpacing="0.05"
+                                android:text="@string/mrp_price"
+                                android:textStyle="bold"
+                                android:gravity="right"
+                              />
+
+
+                            <TextView android:id="@+id/txt_dmart"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/txt_size_13"
+                                android:textColor="@color/green"
+                                android:letterSpacing="0.05"
+                                android:text="@string/dmart_price"
+                                android:textStyle="bold"
+                                android:gravity="right"
+                                />
+
+
+
+                            <TextView android:id="@+id/txt_save"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/txt_size_11"
+                                android:textColor="@color/red"
+                                android:letterSpacing="0.05"
+                                android:text="@string/save"
+                                android:textStyle="bold"
+                                android:gravity="right"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <LinearLayout android:layout_weight="0.70"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    android:layout_gravity="center">
+
+
+
+
+                    <TextView android:id="@+id/txt_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="11sp"
+                        android:textColor="@color/green"
+                        android:letterSpacing="0.05"
+                        android:text="@string/ADD_TO_LIST"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_marginTop="@dimen/margin_10"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout android:layout_weight="0.30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/margin_10">
+
+
+                        <LinearLayout android:layout_weight="0.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView android:visibility="gone"
+                                android:id="@+id/btn_quantity"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/btn_rounded_stroke_corner"
+                                android:gravity="center"
+                                android:letterSpacing="0.03"
+                                android:lineSpacingExtra="8sp"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:text="10 gm"
+                                android:textAllCaps="false"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/txt_size_11"
+                                android:layout_marginRight="@dimen/margin_5"/>
+
+
+                            <LinearLayout android:id="@+id/layout_quantity"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/margin_10"
+                                android:background="@drawable/btn_rounded_stroke_corner">
+                                <TextView android:layout_weight="0.3"
+                                    android:id="@+id/txt_quantity"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:letterSpacing="0.03"
+                                    android:lineSpacingExtra="8sp"
+                                    android:paddingTop="8dp"
+                                    android:paddingBottom="8dp"
+                                    android:text="10 gm"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/txt_size_11"
+                                    android:layout_marginRight="@dimen/margin_5" />
+
+
+
+                                <LinearLayout android:layout_weight="0.7"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/rounded_right_side_corner">
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:src="@drawable/ic_arrow_drop_down_black_24dp"
+                                        >
+
+                                    </ImageView>
+                                </LinearLayout>
+
+
+                                </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout android:layout_weight="0.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/btn_add_cart"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/btn_rounded_solid_color"
+                                android:gravity="center"
+                                android:letterSpacing="0.03"
+                                android:lineSpacingExtra="8sp"
+                                android:paddingTop="8dp"
+                                android:paddingBottom="8dp"
+                                android:text="@string/add_to_cart"
+                                android:textAllCaps="true"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/txt_size_11"
+                                android:layout_marginLeft="@dimen/margin_5"/>
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout android:layout_weight="0.90"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"></LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
